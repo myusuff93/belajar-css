@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 8 - Subsequent-Sibling Combinator</title>
+
+    <style>
+      h2 ~ p {
+        color: darkorchid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Subsequent-Sibling Combinator</h1>
+    <p>
+      Operator kombinasi saudara sesudah (~) dalam CSS memilih semua elemen
+      saudara dari elemen yang ditentukan yang berada setelahnya.
+    </p>
+
+    <p>
+      Berbeda dengan kombinator "next-sibling", yang hanya menargetkan elemen
+      saudara yang langsung berada di sebelahnya, kombinator
+      "subsequent-sibling" (~) dapat menargetkan elemen saudara mana pun yang
+      berada setelah elemen yang ditentukan, sehingga memberikan fleksibilitas
+      yang lebih besar dalam penataan gaya.
+    </p>
+
+    <pre>
+        <code>
+        h2 ~ p {
+        color: darkorchid;
+      }
+        </code>
+    </pre>
+
+    <hr />
+    <div class="container">
+      <h2>Subheading</h2>
+      <p>First paragraph.</p>
+      <p>Second paragraph.</p>
+      <p>Third paragraph.</p>
+      <p>Another paragraph element</p>
+    </div>
+  </body>
+</html>

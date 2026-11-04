@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 7 - Next Sibling Combinator</title>
+    <style>
+      img + figcaption {
+        border: 3px solid lightslategray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Next-Sibling Combinator</h1>
+    <p>
+      Kombinator saudara berikutnya (+) dalam CSS memilih elemen yang langsung
+      berada di belakang elemen saudara yang ditentukan. Kombinator ini berguna
+      ketika Anda ingin menerapkan gaya pada elemen yang langsung berada di
+      belakang elemen lain, sehingga memungkinkan penataan gaya yang tepat
+      sasaran berdasarkan posisi elemen tersebut relatif terhadap elemen-elemen
+      saudaranya.
+    </p>
+    <pre>
+        <code>
+            img + figcaption {
+            border: 3px solid lightslategray;
+        }
+        </code>
+    </pre>
+    <hr />
+    <figure>
+      <img
+        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        alt="A cute orange cat lying on its back."
+      />
+      <figcaption>A cute orange cat lying on its back.</figcaption>
+    </figure>
+  </body>
+</html>

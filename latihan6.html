@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 6 - Child Combinator</title>
+
+    <style>
+      .container > p {
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Child Combinator</h1>
+    <hr />
+    <p>
+      Operator anak (>) dalam CSS digunakan untuk memilih elemen-elemen yang
+      merupakan anak langsung dari suatu elemen induk yang ditentukan.
+    </p>
+
+    <p>
+      Kombinator ini hanya menargetkan elemen-elemen yang memiliki elemen induk
+      tertentu, sehingga aturan CSS Anda menjadi lebih tepat dan mencegah
+      penerapan gaya yang tidak diinginkan pada elemen-elemen yang tersusun
+      lebih dalam.
+    </p>
+    <hr />
+
+    <div class="container">
+      <p>First</p>
+      <div>
+        <p>Second</p>
+      </div>
+      <div>
+        <p>Third</p>
+      </div>
+    </div>
+  </body>
+</html>

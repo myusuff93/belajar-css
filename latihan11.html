@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 11 - inline-block</title>
+    <style>
+      .inline-block-element {
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+      }
+
+      .element1 {
+        background-color: lime;
+      }
+
+      .element2 {
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>inline-block</h1>
+    <p>
+      Singkatnya, perbedaan utama antara elemen inline dan inline-block adalah
+      bahwa ukuran elemen inline tidak dapat dikendalikan, sedangkan elemen
+      inline-block memungkinkan pengendalian penuh atas dimensinya sambil tetap
+      berada dalam baris yang sama dengan konten lainnya.
+    </p>
+
+    <hr />
+
+    <div class="container">
+      <span class="inline-block-element element1">Inline-Block</span>
+      <span class="inline-block-element element2">Inline-Block</span>
+    </div>
+
+    <hr />
+    <p>
+      Setiap elemen `span` diatur dengan properti `display: inline-block` dan
+      juga memiliki nilai lebar serta tinggi yang ditentukan. Elemen-elemen
+      `inline-block` akan ditampilkan berdampingan karena berperilaku seperti
+      elemen `inline`, namun mereka juga memiliki lebar dan tinggi yang
+      ditentukan, sehingga memiliki sifat-sifat seperti elemen `block`.
+    </p>
+
+    <p>
+      Namun, jika Anda menghapus properti `display: inline-block`, baik tinggi
+      maupun lebar tidak akan diterapkan meskipun Anda telah menetapkannya
+      dengan jelas.
+    </p>
+  </body>
+</html>
